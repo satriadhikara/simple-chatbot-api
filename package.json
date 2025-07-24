@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "better-sqlite3": "^12.2.0",
+    "body-parser": "^2.2.0",
+    "drizzle-orm": "^0.44.3",
+    "express": "^5.1.0"
+  },
+  "name": "simple-chatbot-api",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run src/index.ts --watch",
+    "db:migrate": "bunx drizzle-kit migrate"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.19",
+    "drizzle-kit": "^0.31.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
